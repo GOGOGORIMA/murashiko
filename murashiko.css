@@ -1,0 +1,225 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/sawarabigothic.css);
+
+html {
+    overflow: auto;
+    height: 100vh;
+}
+
+body {
+    position: relative;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+    line-height: normal;
+    -webkit-text-size-adjust:100%
+}
+
+header {
+    position:absolute;
+    top: 0;
+    width: 100%;
+}
+
+footer {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    background-color:#FFB6C1;
+}
+
+.footerP{
+    font-size: 0.8rem;
+    color: white;
+}
+
+h1{
+    position: relative;
+    display: inline-block;
+    padding: 0 55px;
+    margin-top: 100px;
+    font-size: 15px;
+}
+
+h1 , p , a:link {
+    color: #808080
+}
+
+img {
+    width: auto;
+    max-height: 100vh;
+}
+
+.ad{
+    width: 18rem;
+    height: 60%;
+}
+
+a:visited {
+    color: #FFB6C1
+}
+
+h1, p , a {
+    font-family: "Sawarabi Gothic";
+}
+
+span {
+    font-size: 8px;
+}
+
+.wapper {
+    position: absolute;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 65%;
+    width: 100vw;
+}
+
+.span1 {
+    color: red;
+}
+
+.span2 {
+    color: pink;
+}
+
+.main {
+    margin: 0 auto;
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+}
+
+.buttons {
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    bottom: 0;
+}
+
+#start {
+    float: left;
+}
+
+#stop {
+    float: right;
+}
+
+#slot {
+    font-size: 28px;
+    font-weight: bold;
+    width: 100%;
+    height: 50%;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#slot p {
+    margin: 30px;
+    word-wrap:break-word;
+}
+
+#actress {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    left: 0;
+}
+
+.buttons {
+    width: 100%;
+    height: 25%;
+    text-align:center;
+    display: block;
+}
+
+#start , #stop {
+    display: block;
+    text-decoration: none;
+    height:50px;
+    width: 210px;
+    text-align: center;
+    color: #ffbad7;
+    outline:none;
+    border:solid 1px #ffbad7;
+    border-radius: 20px;
+    background-color: #fff;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#start:hover , #stop:hover {
+    background: #ffbad7;
+    color: #fff;
+    opacity: 1;
+    cursor : pointer;
+}
+
+
+@media only screen and (max-device-width: 812px) and (orientation:landscape) {
+    img {
+        line-height: 60px;
+        max-height: 50px;
+    }
+
+    h1 {
+        margin: 0 auto;
+    }
+    #slot p {
+        margin: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+        vertical-align: middle;
+    }
+    #slot {
+        height: 30%;
+        display: table;
+    }
+    .main {
+        height: 100%;
+    }
+    .buttons {
+        height: 70%;
+    }
+    #beautie {
+        top: 20px;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    #stop , #start {
+        float: none;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 250px;
+    }
+    .ads{
+        margin-top: 18%;
+    }
+    .ad{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 812px) {
+    .main {
+        width: 40%;
+    }
+}
